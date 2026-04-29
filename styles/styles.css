@@ -1,72 +1,58 @@
 /*
- * Copyright 2020 Adobe. All rights reserved.
- * This file is licensed to you under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License. You may obtain a copy
- * of the License at http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software distributed under
- * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
- * OF ANY KIND, either express or implied. See the License for the specific language
- * governing permissions and limitations under the License.
+ * American Express Investor Relations - Design System
+ * Migrated from ir.americanexpress.com
  */
 
 :root {
-  /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  /* colors - AmEx brand */
+  --background-color: #fff;
+  --light-color: #f4f4f4;
+  --dark-color: #00175a;
+  --text-color: #333;
+  --link-color: #006fcf;
+  --link-hover-color: #0050a0;
+  --amex-blue: #006fcf;
+  --amex-navy: #00175a;
+  --amex-white: #fff;
+  --amex-grey: #f4f4f4;
+  --amex-dark-grey: #53565a;
 
-  /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  /* fonts - Helvetica Neue system stack (BentonSans proprietary fallback) */
+  --body-font-family: "Helvetica Neue", helvetica, helvetica-neue-fallback, arial, sans-serif;
+  --heading-font-family: "Helvetica Neue", helvetica, helvetica-neue-fallback, arial, sans-serif;
 
   /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
+  --body-font-size-m: 18px;
+  --body-font-size-s: 16px;
+  --body-font-size-xs: 14px;
 
   /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
+  --heading-font-size-xxl: 30px;
+  --heading-font-size-xl: 24px;
+  --heading-font-size-l: 20px;
+  --heading-font-size-m: 18px;
+  --heading-font-size-s: 16px;
+  --heading-font-size-xs: 14px;
 
   /* nav height */
   --nav-height: 64px;
-}
 
-/* fallback fonts */
-@font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
-  src: local('Arial');
-}
+  /* spacing */
+  --section-padding: 40px 0;
+  --content-max-width: 1200px;
 
-@font-face {
-  font-family: roboto-fallback;
-  size-adjust: 99.529%;
-  src: local('Arial');
+  /* transitions */
+  --transition-base: 0.2s ease;
 }
 
 @media (width >= 900px) {
   :root {
-    /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
-
-    /* heading sizes */
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
-    --heading-font-size-xs: 18px;
+    --heading-font-size-xxl: 38px;
+    --heading-font-size-xl: 30px;
+    --heading-font-size-l: 24px;
+    --heading-font-size-m: 20px;
+    --heading-font-size-s: 18px;
+    --heading-font-size-xs: 16px;
   }
 }
 
@@ -76,8 +62,8 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--body-font-family);
-  font-size: var(--body-font-size-m);
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.467;
 }
 
 body.appear {
@@ -107,9 +93,10 @@ h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
   font-family: var(--heading-font-family);
-  font-weight: 600;
-  line-height: 1.25;
+  font-weight: 500;
+  line-height: 1.267;
   scroll-margin: 40px;
+  color: var(--amex-navy);
 }
 
 h1 { font-size: var(--heading-font-size-xxl); }
@@ -125,7 +112,7 @@ ol,
 ul,
 pre,
 blockquote {
-  margin-top: 0.8em;
+  margin-top: 1em;
   margin-bottom: 0.25em;
 }
 
@@ -136,7 +123,7 @@ pre {
 
 pre {
   padding: 16px;
-  border-radius: 8px;
+  border-radius: 4px;
   background-color: var(--light-color);
   overflow-x: auto;
   white-space: pre;
@@ -158,6 +145,7 @@ a:any-link {
   color: var(--link-color);
   text-decoration: none;
   overflow-wrap: break-word;
+  transition: color var(--transition-base);
 }
 
 a:hover {
@@ -178,85 +166,80 @@ button.button {
   justify-content: center;
   max-width: 100%;
   margin: 0;
-  border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
-  font: inherit;
-  font-weight: 500;
+  border: 2px solid var(--amex-blue);
+  border-radius: 4px;
+  padding: 14px 20px;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1.25;
   text-decoration: none;
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  background-color: var(--amex-blue);
+  color: var(--amex-white);
+  transition: all var(--transition-base);
+}
+
+a.button:any-link:hover,
+button.button:hover {
+  background-color: var(--link-hover-color);
+  border-color: var(--link-hover-color);
+  color: var(--amex-white);
+  text-decoration: none;
+}
+
+a.button:any-link:focus-visible,
+button.button:focus-visible {
+  outline: 2px solid var(--amex-blue);
+  outline-offset: 2px;
 }
 
 a.button[aria-disabled="true"],
 button.button:disabled {
   cursor: not-allowed;
   pointer-events: none;
+  opacity: 0.5;
 }
 
 a.button.primary,
 button.button.primary {
-  border-color: var(--text-color);
-  background-color: var(--text-color);
-  color: var(--background-color);
+  border-color: var(--amex-blue);
+  background-color: var(--amex-blue);
+  color: var(--amex-white);
 }
 
 a.button.primary:hover,
 a.button.primary:focus-visible,
 button.button.primary:hover,
 button.button.primary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--dark-color);
-  color: var(--light-color);
-}
-
-a.button.primary[aria-disabled="true"],
-a.button.primary[aria-disabled="true"]:hover,
-a.button.primary[aria-disabled="true"]:focus-visible,
-button.button.primary:disabled,
-button.button.primary:disabled:hover,
-button.button.primary:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
+  border-color: var(--link-hover-color);
+  background-color: var(--link-hover-color);
+  color: var(--amex-white);
 }
 
 a.button.secondary,
 button.button.secondary {
-  border-color: var(--text-color);
+  border-color: var(--amex-blue);
   background-color: transparent;
-  color: var(--text-color);
+  color: var(--amex-blue);
 }
 
 a.button.secondary:hover,
 a.button.secondary:focus-visible,
 button.button.secondary:hover,
 button.button.secondary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--light-color);
-  color: var(--dark-color);
+  background-color: var(--amex-blue);
+  color: var(--amex-white);
 }
 
-a.button.secondary[aria-disabled="true"],
-a.button.secondary[aria-disabled="true"]:hover,
-a.button.secondary[aria-disabled="true"]:focus-visible,
-button.button.secondary:disabled,
-button.button.secondary:disabled:hover,
-button.button.secondary:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
-}
-
-/* high-impact call-to-action */
 a.button.accent,
 button.button.accent {
-  border-color: var(--link-color);
-  background-color: var(--link-color);
-  color: var(--background-color);
+  border-color: var(--amex-navy);
+  background-color: var(--amex-navy);
+  color: var(--amex-white);
 }
 
 a.button.accent:hover,
@@ -265,17 +248,6 @@ button.button.accent:hover,
 button.button.accent:focus-visible {
   border-color: var(--link-hover-color);
   background-color: var(--link-hover-color);
-}
-
-a.button.accent[aria-disabled="true"],
-a.button.accent[aria-disabled="true"]:hover,
-a.button.accent[aria-disabled="true"]:focus-visible,
-button.button.accent:disabled,
-button.button.accent:disabled:hover,
-button.button.accent:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
 }
 
 main img {
@@ -297,11 +269,11 @@ main img {
 
 /* sections */
 main > .section {
-  margin: 40px 0;
+  margin: 0;
 }
 
 main > .section > div {
-  max-width: 1200px;
+  max-width: var(--content-max-width);
   margin: auto;
   padding: 0 24px;
 }
@@ -316,10 +288,108 @@ main > .section:first-of-type {
   }
 }
 
-/* section metadata */
+/* section metadata variants */
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+main .section.amex-blue {
+  background-color: var(--amex-blue);
+  margin: 0;
+  padding: 40px 0;
+}
+
+main .section.amex-blue h1,
+main .section.amex-blue h2,
+main .section.amex-blue h3,
+main .section.amex-blue p,
+main .section.amex-blue a:any-link {
+  color: var(--amex-white);
+}
+
+main .section.light-grey {
+  background-color: var(--amex-grey);
+  margin: 0;
+  padding: 40px 0;
+  background-image: url('https://s26.q4cdn.com/747928648/files/design/background/backrgound-latest-widgets.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+main .section.dark-navy {
+  background-color: var(--amex-navy);
+  margin: 0;
+  padding: 40px 0;
+}
+
+main .section.dark-navy h1,
+main .section.dark-navy h2,
+main .section.dark-navy h3,
+main .section.dark-navy p,
+main .section.dark-navy a:any-link,
+main .section.dark-navy li,
+main .section.dark-navy strong {
+  color: var(--amex-white);
+}
+
+main .section.dark,
+main .section.dark-navy {
+  background-color: var(--amex-navy);
+}
+
+/* Corporate Profile section (second section, no metadata style) */
+main > .section:nth-child(2) {
+  text-align: center;
+  padding: 50px 0;
+}
+
+main > .section:nth-child(2) h2 {
+  font-size: 29px;
+  font-weight: 300;
+  color: var(--text-color);
+  margin: 0 0 25px;
+  line-height: 1;
+}
+
+main > .section:nth-child(2) p {
+  font-size: 18px;
+  line-height: 1.467;
+  text-align: left;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Disclaimer section */
+main > .section:nth-child(4) {
+  padding: 20px 0;
+  font-size: 16px;
+  border-top: 1px solid #e0e0e0;
+}
+
+main > .section:nth-child(4) p {
+  font-size: 16px;
+  line-height: 1.467;
+  color: var(--text-color);
+}
+
+/* Hide SVG background images rendered as content */
+main .section.light-grey > div > p:first-child:has(img[src*="background"]) {
+  display: none;
+}
+
+/* Hero section - full bleed */
+main > .section.hero-ir-container > div {
+  max-width: unset;
+  padding: 0;
+}
+
+/* Hide duplicate columns-contact wrapper and confirmation content in footer */
+main .section.dark-navy > .columns-contact-wrapper ~ .columns-contact-wrapper,
+main .section.dark-navy > .default-content-wrapper {
+  display: none;
 }

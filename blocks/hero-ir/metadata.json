@@ -1,0 +1,12 @@
+{
+  "variantName": "hero-ir",
+  "baseBlock": "hero",
+  "description": "Investor Relations hero with branded banner, event teaser, and stock quote widget",
+  "sourceUrl": "https://ir.americanexpress.com/investor-relations/default.aspx",
+  "visualCharacteristics": {
+    "backgroundColor": "#006FCF (AmEx blue)",
+    "layout": "two-column: left has logo + title + event, right has stock ticker",
+    "textColor": "white"
+  },
+  "created": "2026-04-22"
+}

@@ -1,0 +1,100 @@
+/* Cards IR - AmEx Investor Relations content grid */
+.cards-ir > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+@media (width >= 600px) {
+  .cards-ir > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards-ir > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cards-ir > ul > li {
+  background-color: var(--background-color);
+  border: 1px solid #ecedee;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-ir .cards-ir-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.cards-ir .cards-ir-card-body h2 {
+  color: var(--text-color);
+  font-size: 29px;
+  font-weight: 300;
+  margin: 0;
+  padding: 17px 22px;
+  border-bottom: 1px solid #ecedee;
+  line-height: 1.31;
+}
+
+.cards-ir .cards-ir-card-body p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 4px 0;
+  padding: 0 22px;
+  color: var(--text-color);
+}
+
+.cards-ir .cards-ir-card-body p:first-of-type {
+  margin-top: 16px;
+}
+
+.cards-ir .cards-ir-card-body a:any-link {
+  color: var(--amex-blue);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.cards-ir .cards-ir-card-body a:hover {
+  text-decoration: underline;
+}
+
+/* CTA button at bottom of card */
+.cards-ir .cards-ir-card-body p:last-child {
+  margin-top: auto;
+  padding: 16px 22px;
+}
+
+.cards-ir .cards-ir-card-body p:last-child a {
+  display: block;
+  padding: 16px 20px;
+  background-color: var(--amex-blue);
+  color: var(--amex-white);
+  border-radius: 0;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color var(--transition-base);
+}
+
+.cards-ir .cards-ir-card-body p:last-child a:hover {
+  background-color: var(--link-hover-color);
+  text-decoration: none;
+}
+
+.cards-ir .cards-ir-card-image {
+  line-height: 0;
+}
+
+.cards-ir > ul > li img {
+  max-width: 100%;
+  height: auto;
+}

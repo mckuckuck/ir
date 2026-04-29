@@ -1,0 +1,12 @@
+{
+  "variantName": "columns-contact",
+  "baseBlock": "columns",
+  "description": "Contact and investor alerts footer with two columns on dark background",
+  "sourceUrl": "https://ir.americanexpress.com/investor-relations/default.aspx",
+  "visualCharacteristics": {
+    "backgroundColor": "#1A1A2E (dark navy)",
+    "layout": "two-column: contact info left, email signup right",
+    "textColor": "white"
+  },
+  "created": "2026-04-22"
+}

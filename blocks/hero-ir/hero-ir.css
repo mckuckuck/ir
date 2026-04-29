@@ -1,0 +1,94 @@
+/* Hero IR - AmEx Investor Relations hero banner */
+.hero-ir-container {
+  background: var(--amex-navy) url('https://s26.q4cdn.com/747928648/files/design/banner/centurion-solid-banner.svg') no-repeat right center;
+  background-size: contain;
+}
+
+.hero-ir-container .hero-ir-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+/* Hide the centurion banner image from content (it's now a CSS background) */
+.hero-ir-container > .hero-ir-wrapper > p:first-child {
+  display: none;
+}
+
+.hero-ir {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 200px;
+  color: var(--amex-white);
+}
+
+@media (width >= 900px) {
+  .hero-ir {
+    grid-template-columns: 3fr 1fr;
+    min-height: 280px;
+  }
+}
+
+.hero-ir h1 {
+  color: var(--amex-navy);
+  font-size: 30px;
+  font-weight: 500;
+  margin: 20px 0 0;
+  padding: 20px 0 0;
+  line-height: 38px;
+}
+
+/* Left column - white box with logo, title, event */
+.hero-ir > div:first-child {
+  background-color: var(--amex-white);
+  padding: 30px 32px;
+}
+
+.hero-ir > div:first-child img {
+  max-height: 50px;
+  width: auto;
+}
+
+.hero-ir > div:first-child p {
+  color: var(--text-color);
+  margin: 4px 0;
+  font-size: 15px;
+}
+
+.hero-ir > div:first-child a:any-link {
+  color: var(--amex-navy);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.hero-ir > div:first-child a:hover {
+  text-decoration: underline;
+}
+
+/* Right column - stock ticker on dark background */
+.hero-ir > div:last-child {
+  padding: 20px 24px;
+  text-align: right;
+}
+
+.hero-ir > div:last-child p {
+  color: var(--amex-white);
+  margin: 0 0 4px;
+}
+
+.hero-ir > div:last-child p:first-child {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.hero-ir > div:last-child p:nth-child(2) {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 4px 0;
+  line-height: 1;
+}
