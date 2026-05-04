@@ -1,0 +1,21 @@
+{
+  "description": "Maps original external image URLs to local asset paths for DA upload",
+  "mapping": {
+    "https://s26.q4cdn.com/747928648/files/design/svg/search-icon.svg": "media/search-icon.png",
+    "https://s26.q4cdn.com/747928648/files/design/logo/american-express-logo.svg": "media/american-express-logo.png",
+    "https://s26.q4cdn.com/747928648/files/images/landing/cards_stack.png": "media/cards-stack.png",
+    "https://s26.q4cdn.com/747928648/files/design/background/backrgound-latest-widgets.svg": "media/background-latest-widgets.png",
+    "https://s26.q4cdn.com/747928648/files/doc_financials/2025/ar/American-Express-Annual-Report-2025.png": "media/american-express-annual-report-2025.png",
+    "https://s26.q4cdn.com/747928648/files/doc_financials/2025/ar/American-Express-2026-Proxy-Statement.png": "media/american-express-2026-proxy-statement.png",
+    "https://www.aexp-static.com/cdaas/one/statics/axp-static-assets/1.8.0/package/dist/img/logos/dls-logo-bluebox-solid.svg": "media/dls-logo-bluebox-solid.png",
+    "https://www.aexp-static.com/cdaas/one/statics/axp-static-assets/1.8.0/package/dist/img/logos/dls-logo-stack.svg": "media/dls-logo-stack.png",
+    "https://www.aexp-static.com/cdaas/one/statics/@americanexpress/static-assets/2.32.1/package/dist/img/flags/dls-flag-us.svg": "media/dls-flag-us.png",
+    "https://www.aexp-static.com/cdaas/one/statics/axp-static-assets/1.8.0/package/dist/img/logos/dls-logo-stack-white.svg": "media/dls-logo-stack-white.png",
+    "https://s26.q4cdn.com/747928648/files/images/landing/corp-resp-landing-img.jpg": "media/corp-resp-landing-img.jpg",
+    "https://s26.q4cdn.com/747928648/files/design/banner/centurion-solid-banner.svg": "media/centurion-solid-banner.png",
+    "https://s26.q4cdn.com/747928648/files/design/svg/centurion-solid-mobile.svg": "media/centurion-solid-mobile.png",
+    "https://s26.q4cdn.com/747928648/files/design/banner/american-express-banner.svg": "media/american-express-banner.svg",
+    "https://s26.q4cdn.com/747928648/files/doc_downloads/2026/04/March-2026-ABS-Slide-for-Website.jpg": "media/march-2026-abs-slide-for-website.jpg",
+    "https://s26.q4cdn.com/747928648/files/images/01_cards_stack.png": "media/cards-stack-01.png"
+  }
+}
