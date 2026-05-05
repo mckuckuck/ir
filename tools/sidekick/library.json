@@ -1,0 +1,24 @@
+{
+  "blocks": [
+    {
+      "name": "Hero IR",
+      "path": "/tools/sidekick/blocks/hero-ir"
+    },
+    {
+      "name": "Cards IR",
+      "path": "/tools/sidekick/blocks/cards-ir"
+    },
+    {
+      "name": "Columns Contact",
+      "path": "/tools/sidekick/blocks/columns-contact"
+    },
+    {
+      "name": "Columns",
+      "path": "/tools/sidekick/blocks/columns"
+    },
+    {
+      "name": "Section Metadata",
+      "path": "/tools/sidekick/blocks/section-metadata"
+    }
+  ]
+}
