@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://ir.americanexpress.com/investor-relations/default.aspx",
+  "path": "investor-relations/default",
+  "timestamp": "2026-04-23T00:33:40.812Z",
+  "title": "American Express Company - Investor Relations",
+  "template": "ir-homepage",
+  "blocks": [
+    "hero-ir",
+    "cards-ir",
+    "columns-contact",
+    "columns-contact"
+  ]
+}

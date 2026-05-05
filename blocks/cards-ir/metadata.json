@@ -1,0 +1,12 @@
+{
+  "variantName": "cards-ir",
+  "baseBlock": "cards",
+  "description": "Investor relations content grid with 6 widget cards (Events, Earnings, News, SEC Filings, Annual Report, Sustainability)",
+  "sourceUrl": "https://ir.americanexpress.com/investor-relations/default.aspx",
+  "visualCharacteristics": {
+    "backgroundColor": "#F4F4F4 (light grey)",
+    "layout": "3-column grid on desktop, responsive",
+    "cardStyle": "white cards with headers and content links"
+  },
+  "created": "2026-04-22"
+}
